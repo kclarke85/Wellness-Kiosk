@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"gherkin_document:ETI"ACucumber::Core::Events::GherkinSourceParsed#gherkin_document;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I";@return [GherkinDocument] the GherkinDocument Ast Node;T:
+@fileI" lib/cucumber/core/events.rb;T:0@omit_headings_from_table_of_contents_below0F@I"0Cucumber::Core::Events::GherkinSourceParsed;TcRDoc::NormalClass0

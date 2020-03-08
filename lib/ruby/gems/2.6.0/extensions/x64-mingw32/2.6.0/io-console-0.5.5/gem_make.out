@@ -1,0 +1,16 @@
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/io-console-0.5.5/ext/io/console
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/2.6.0 -r ./siteconf20200129-11336-evws34.rb extconf.rb
+creating Makefile
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/io-console-0.5.5/ext/io/console
+make "DESTDIR=" clean
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/io-console-0.5.5/ext/io/console
+make "DESTDIR="
+generating console-x64-mingw32.def
+compiling console.c
+linking shared-object io/console.so
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/io-console-0.5.5/ext/io/console
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 console.so ./.gem.20200129-11336-qukc85/io

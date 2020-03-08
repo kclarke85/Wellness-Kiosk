@@ -1,0 +1,15 @@
+# Creation Date: 12/05/16
+# Author Kevin Clarke
+# Type: Smoke & Sanity
+# Priority: Medium
+# Estimate: None
+
+Feature: TC_101_sqprobe_regression
+  Scenario: TC_101_Login sqmsse
+
+ Given launch putty
+ # Then The user enters the The enters userid
+ # And  The user enters the The enters password
+ # Then The user clicks the Login button
+ # But Verify the first login Dialog
+ # And Write the test result to Testrail

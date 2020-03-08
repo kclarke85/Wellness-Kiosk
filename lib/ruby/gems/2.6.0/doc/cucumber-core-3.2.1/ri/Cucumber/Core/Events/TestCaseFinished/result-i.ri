@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"result:ETI"4Cucumber::Core::Events::TestCaseFinished#result;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"B@return [Test::Result] the result of running the {Test::Step};T:
+@fileI" lib/cucumber/core/events.rb;T:0@omit_headings_from_table_of_contents_below0F@I"-Cucumber::Core::Events::TestCaseFinished;TcRDoc::NormalClass0

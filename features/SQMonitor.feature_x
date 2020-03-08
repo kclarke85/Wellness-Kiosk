@@ -1,0 +1,16 @@
+# Creation Date: 12/05/16
+# Author Kevin Clarke
+# Type: Smoke & Sanity
+# Priority: Medium
+# Estimate: None
+
+Feature: Basic Sanity Test
+  Scenario: Basic Sanity Test for SQonitor
+
+Given Log into SQMonitor
+Then Enter User ID
+And now
+#And Enter Password
+#Then Click the login button
+#Then  Escape from the popup window
+#And Verify the Dashboard functionality

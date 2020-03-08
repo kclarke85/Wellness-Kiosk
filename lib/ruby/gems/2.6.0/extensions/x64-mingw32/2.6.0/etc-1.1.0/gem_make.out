@@ -1,0 +1,34 @@
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/etc-1.1.0/ext/etc
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/2.6.0 -r ./siteconf20200129-11336-oa9wg.rb extconf.rb
+checking for sys/utsname.h... no
+checking for getpwnam() in -lsun... no
+checking for uname((struct utsname *)NULL)... no
+checking for getlogin()... yes
+checking for getpwent()... no
+checking for getgrent()... no
+checking for sysconf()... no
+checking for confstr()... no
+checking for fpathconf()... no
+checking for struct passwd.pw_gecos in pwd.h... no
+checking for struct passwd.pw_change in pwd.h... no
+checking for struct passwd.pw_quota in pwd.h... no
+checking for struct passwd.pw_age in pwd.h... no
+checking for struct passwd.pw_class in pwd.h... no
+checking for struct passwd.pw_comment in pwd.h... no
+checking for struct passwd.pw_expire in pwd.h... no
+checking for struct passwd.pw_passwd in pwd.h... no
+checking for struct group.gr_passwd in grp.h... no
+creating Makefile
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/etc-1.1.0/ext/etc
+make "DESTDIR=" clean
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/etc-1.1.0/ext/etc
+make "DESTDIR="
+generating etc-x64-mingw32.def
+compiling etc.c
+linking shared-object etc.so
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/etc-1.1.0/ext/etc
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 etc.so ./.gem.20200129-11336-1oqgx5j

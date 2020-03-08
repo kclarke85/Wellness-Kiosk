@@ -1,0 +1,237 @@
+[
+  {
+    "source": "^users open Messaging$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:1",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users enter phone number and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:25",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users click \"([^\"]*)\" button$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:40",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users will see the SMS sent$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:48",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users open Messaging again$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:60",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users enter phone number with (\\d+) dialing and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:76",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users will see the new message$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:91",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users enter phone number with \\+ dialing and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:104",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users enter non\\-Zig users phone number and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:118",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^user enter multiple non\\-Zig users phone numbers and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:133",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users enter an International phone number and type \"([^\"]*)\"$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418-SMSC-10_Second_DELAY-Regression_Step.rb:152",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^users open Messaging on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:6",
+    "steps": [
+      {
+        "name": "users open Messaging on web",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users enter phone number and type \"([^\"]*)\" on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:20",
+    "steps": [
+      {
+        "name": "users enter phone number and type \"test\" on web",
+        "args": [
+          {
+            "offset": 35,
+            "val": "test"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users click \"([^\"]*)\" button on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:31",
+    "steps": [
+      {
+        "name": "users click \"send\" button on web",
+        "args": [
+          {
+            "offset": 13,
+            "val": "send"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users will see the SMS sent on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:36",
+    "steps": [
+      {
+        "name": "users will see the SMS sent on web",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users enter its phone and type \"([^\"]*)\" on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:45",
+    "steps": [
+      {
+        "name": "users enter its phone and type \"test\" on web",
+        "args": [
+          {
+            "offset": 32,
+            "val": "test"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users will see the new message on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:56",
+    "steps": [
+      {
+        "name": "users will see the new message on web",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^users enter phone number with (\\d+) dialing and type \"([^\"]*)\" on web$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/CRKTCHG-2418_step.rb:65",
+    "steps": [
+      {
+        "name": "users enter phone number with 011 dialing and type \"test\" on web",
+        "args": [
+          {
+            "offset": 30,
+            "val": "011"
+          },
+          {
+            "offset": 52,
+            "val": "test"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Validate that SMS\\-MO to Zig user SMS Success\\.$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/Jasper_Poc.rb:7",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^Validate that an SMS Text Was Sent$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/Jasper_Poc.rb:56",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^Validate that data session works on the sims$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/Jasper_Poc.rb:78",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^Validate that SMS\\-MO Inter\\-carrier$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/Jasper_Poc.rb:103",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^Validate that SMS\\-MO to Zig user SMS Success repeatedly\\.$",
+    "flags": "",
+    "file_colon_line": "features/step_definitions/Jasper_Poc.rb:133",
+    "steps": [
+
+    ]
+  }
+]

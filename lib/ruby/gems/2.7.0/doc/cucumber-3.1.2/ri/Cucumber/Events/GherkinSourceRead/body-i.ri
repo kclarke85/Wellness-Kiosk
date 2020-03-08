@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"	body:ETI"-Cucumber::Events::GherkinSourceRead#body;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"The raw Gherkin source;T:
+@fileI"/lib/cucumber/events/gherkin_source_read.rb;T:0@omit_headings_from_table_of_contents_below0F@I"(Cucumber::Events::GherkinSourceRead;TcRDoc::NormalClass0

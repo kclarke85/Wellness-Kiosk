@@ -1,0 +1,21 @@
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/ext/zlib
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/2.6.0 -r ./siteconf20200129-11336-1la66cw.rb extconf.rb
+checking for deflateReset() in -lz... yes
+checking for zlib.h... yes
+checking for crc32_combine() in zlib.h... yes
+checking for adler32_combine() in zlib.h... yes
+checking for z_crc_t in zlib.h... yes
+creating Makefile
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/ext/zlib
+make "DESTDIR=" clean
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/ext/zlib
+make "DESTDIR="
+generating zlib-x64-mingw32.def
+compiling zlib.c
+linking shared-object zlib.so
+
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/ext/zlib
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 zlib.so ./.gem.20200129-11336-1yugvhl

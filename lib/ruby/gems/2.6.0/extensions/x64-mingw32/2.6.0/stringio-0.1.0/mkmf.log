@@ -1,0 +1,71 @@
+have_func: checking for rb_io_extract_modeenc() in ruby/io.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:18:57: error: 'rb_io_extract_modeenc' undeclared (first use in this function)
+   18 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_extract_modeenc; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~
+conftest.c:18:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby/io.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return 0;
+17: }
+18: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_extract_modeenc; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\ccgtYHHU.o:conftest.c:(.text+0x5): undefined reference to `rb_io_extract_modeenc'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <ruby/io.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return 0;
+17: }
+18: extern void rb_io_extract_modeenc();
+19: int t(void) { rb_io_extract_modeenc(); return 0; }
+/* end */
+
+--------------------
+

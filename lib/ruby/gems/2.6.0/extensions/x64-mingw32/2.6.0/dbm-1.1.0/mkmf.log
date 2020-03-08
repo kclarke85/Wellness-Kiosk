@@ -1,0 +1,650 @@
+have_type: checking for DBM in ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: ndbm.h: No such file or directory
+    5 | #include <ndbm.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db2/db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db2/db.h: No such file or directory
+    5 | #include <db2/db.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db2/db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db2.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db2.h: No such file or directory
+    5 | #include <db2.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db2.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db1/ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: db1/ndbm.h: No such file or directory
+    5 | #include <db1/ndbm.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db1/ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db1.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: db1.h: No such file or directory
+    5 | #include <db1.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db1.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: ndbm.h: No such file or directory
+    5 | #include <ndbm.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db6/db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db6/db.h: No such file or directory
+    5 | #include <db6/db.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db6/db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db6.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db6.h: No such file or directory
+    5 | #include <db6.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db6.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db5/db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db5/db.h: No such file or directory
+    5 | #include <db5/db.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db5/db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db5.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db5.h: No such file or directory
+    5 | #include <db5.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db5.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db4/db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db4/db.h: No such file or directory
+    5 | #include <db4/db.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db4/db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db4.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db4.h: No such file or directory
+    5 | #include <db4.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db4.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db3/db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db3/db.h: No such file or directory
+    5 | #include <db3/db.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db3/db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db3.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db3.h: No such file or directory
+    5 | #include <db3.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db3.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in db.h with -DDB_DBM_HSEARCH... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  -DDB_DBM_HSEARCH -c conftest.c"
+conftest.c:5:10: fatal error: db.h: No such file or directory
+    5 | #include <db.h>
+      |          ^~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <db.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_library: checking for -lgdbm... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260 -lgdbm  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lgdbm
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -lgdbm... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260 -lgdbm  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lgdbm
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -lgdbm... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260 -lgdbm  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lgdbm
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for DBM in gdbm-ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: gdbm-ndbm.h: No such file or directory
+    5 | #include <gdbm-ndbm.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <gdbm-ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in gdbm/ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: gdbm/ndbm.h: No such file or directory
+    5 | #include <gdbm/ndbm.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <gdbm/ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in ndbm.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: ndbm.h: No such file or directory
+    5 | #include <ndbm.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ndbm.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in qdbm/relic.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: qdbm/relic.h: No such file or directory
+    5 | #include <qdbm/relic.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <qdbm/relic.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for DBM in relic.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: relic.h: No such file or directory
+    5 | #include <relic.h>
+      |          ^~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <relic.h>
+6: 
+7: /*top*/
+8: typedef DBM conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+

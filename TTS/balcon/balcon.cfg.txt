@@ -1,0 +1,1 @@
+START balcon -n "Zira" -c -d "d:\rex\rules.rex" -d "d:\dic\rules.dic

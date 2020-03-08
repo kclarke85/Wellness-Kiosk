@@ -1,0 +1,2 @@
+U:RDoc::Attr[iI"test_step:ETI".Cucumber::Events::StepActivated#test_step;TI"R;T:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I")@return [Cucumber::Core::Test::Step];T:
+@fileI"*lib/cucumber/events/step_activated.rb;T:0@omit_headings_from_table_of_contents_below0F@I"$Cucumber::Events::StepActivated;TcRDoc::NormalClass0

@@ -1,0 +1,20 @@
+CLASS: VoIP SERVICE: VoIP   
+Passive
+START TIME:
+02:15 PM Jan 02, 2020 EST
+WINDOW:
+1 Hour
+3 Hours
+6 Hours
+24 Hours
+7 Days
+30 Days
+< 3.13.43.84.20510Service Health (MOS-CQ)Reports
+Reg DelayReg FailsAccess DelaySetup FailsDisc DelayDisc FailsSignaling PerformanceGoodPoor
+WarningsFailures0510Alerts
+2:15P2:30P2:45P3:00P3:15P12345Quality v. TimeQuality (MOS-CQ)
+90th Percentile 95th Percentile 99th Percentile
+LossDiscardDelayJitterSignal/EchoProblem IndicatorsLowHigh
+2:15P2:30P2:45P3:00P3:15P0246810Report VolumeReports
+(none)(none)(none)(none)(none)Problem CorrelationLowHigh
+WARNING. Data on this page, including any telephone numbers, URIs, IP addresses, MAC addresses, call times and durations, usernames, passwords, email addresses and information on users and user activities is strictly confidential and must not be revealed to third parties without authorization.

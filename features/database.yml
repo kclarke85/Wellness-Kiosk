@@ -1,0 +1,5 @@
+development:
+  adapter: sqlserver
+  database: Lisa_One
+  username: KECLARKE
+  password: Monday24@@

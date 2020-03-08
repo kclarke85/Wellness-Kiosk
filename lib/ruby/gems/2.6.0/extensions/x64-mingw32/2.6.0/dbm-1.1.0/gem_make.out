@@ -1,0 +1,67 @@
+current directory: C:/Ruby/lib/ruby/gems/2.6.0/gems/dbm-1.1.0/ext/dbm
+C:/Ruby/bin/ruby.exe -I C:/Ruby/lib/ruby/2.6.0 -r ./siteconf20200129-11336-puwvrg.rb extconf.rb
+checking for DBM in ndbm.h... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db2/db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db2.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db1/ndbm.h... no
+checking for DBM in db1.h... no
+checking for DBM in ndbm.h... no
+checking for DBM in db6/db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db6.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db5/db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db5.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db4/db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db4.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db3/db.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db3.h with -DDB_DBM_HSEARCH... no
+checking for DBM in db.h with -DDB_DBM_HSEARCH... no
+checking for -lgdbm... no
+checking for -lgdbm... no
+checking for -lgdbm... no
+checking for DBM in gdbm-ndbm.h... no
+checking for DBM in gdbm/ndbm.h... no
+checking for DBM in ndbm.h... no
+checking for DBM in qdbm/relic.h... no
+checking for DBM in relic.h... no
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=C:/Ruby/bin/$(RUBY_BASE_NAME)
+	--with-dbm-dir
+	--without-dbm-dir
+	--with-dbm-include
+	--without-dbm-include=${dbm-dir}/include
+	--with-dbm-lib
+	--without-dbm-lib=${dbm-dir}/lib
+	--with-dbm-type
+	--without-dbm-type
+	--with-gdbmlib
+	--without-gdbmlib
+	--with-gdbmlib
+	--without-gdbmlib
+	--with-gdbmlib
+	--without-gdbmlib
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  C:/Ruby/lib/ruby/gems/2.6.0/extensions/x64-mingw32/2.6.0/dbm-1.1.0/mkmf.log
+
+extconf failed, exit code 1

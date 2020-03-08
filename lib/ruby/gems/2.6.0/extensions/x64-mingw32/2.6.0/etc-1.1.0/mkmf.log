@@ -1,0 +1,682 @@
+have_header: checking for sys/utsname.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: sys/utsname.h: No such file or directory
+    5 | #include <sys/utsname.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/utsname.h>
+/* end */
+
+--------------------
+
+have_library: checking for getpwnam() in -lsun... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260 -lsun  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'getpwnam' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwnam; return !p; }
+      |                                                         ^~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwnam; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260 -lsun  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lsun
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void getpwnam();
+18: int t(void) { getpwnam(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for uname((struct utsname *)NULL)... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:18:15: warning: implicit declaration of function 'uname' [-Wimplicit-function-declaration]
+   18 | int t(void) { uname((struct utsname *)NULL); return 0; }
+      |               ^~~~~
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\cca68ORN.o:conftest.c:(.text+0x7): undefined reference to `uname'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: 
+18: int t(void) { uname((struct utsname *)NULL); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getlogin()... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'getlogin' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getlogin; return !p; }
+      |                                                         ^~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getlogin; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void getlogin();
+18: int t(void) { getlogin(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getpwent()... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'getpwent' undeclared (first use in this function); did you mean 'netent'?
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwent; return !p; }
+      |                                                         ^~~~~~~~
+      |                                                         netent
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getpwent; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\ccE96VF3.o:conftest.c:(.text+0x5): undefined reference to `getpwent'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void getpwent();
+18: int t(void) { getpwent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for getgrent()... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'getgrent' undeclared (first use in this function); did you mean 'netent'?
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))getgrent; return !p; }
+      |                                                         ^~~~~~~~
+      |                                                         netent
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))getgrent; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\cc470zhY.o:conftest.c:(.text+0x5): undefined reference to `getgrent'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void getgrent();
+18: int t(void) { getgrent(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for sysconf()... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'sysconf' undeclared (first use in this function); did you mean 'swscanf'?
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))sysconf; return !p; }
+      |                                                         ^~~~~~~
+      |                                                         swscanf
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))sysconf; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\cc9mo0QH.o:conftest.c:(.text+0x5): undefined reference to `sysconf'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void sysconf();
+18: int t(void) { sysconf(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for confstr()... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'confstr' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))confstr; return !p; }
+      |                                                         ^~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))confstr; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\ccInLtnk.o:conftest.c:(.text+0x5): undefined reference to `confstr'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void confstr();
+18: int t(void) { confstr(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for fpathconf()... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'fpathconf' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))fpathconf; return !p; }
+      |                                                         ^~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))fpathconf; return !p; }
+/* end */
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math conftest.c  -L. -LC:/Ruby/lib -L. -pipe -s     -lx64-msvcrt-ruby260  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+C:/Ruby/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kclar\AppData\Local\Temp\cc55m5ra.o:conftest.c:(.text+0x5): undefined reference to `fpathconf'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return 0;
+16: }
+17: extern void fpathconf();
+18: int t(void) { fpathconf(); return 0; }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_gecos in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_gecos - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_change in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_change - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_quota in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_quota - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_age in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_age - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_class in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_class - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_comment in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_comment - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_expire in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_expire - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct passwd.pw_passwd in pwd.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: pwd.h: No such file or directory
+    5 | #include <pwd.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <pwd.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct passwd*)0)->pw_passwd - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct group.gr_passwd in grp.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/Ruby/include/ruby-2.6.0/x64-mingw32 -IC:/Ruby/include/ruby-2.6.0/ruby/backward -IC:/Ruby/include/ruby-2.6.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math   -c conftest.c"
+conftest.c:5:10: fatal error: grp.h: No such file or directory
+    5 | #include <grp.h>
+      |          ^~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <grp.h>
+ 6: 
+ 7: /*top*/
+ 8: int s = (char *)&((struct group*)0)->gr_passwd - (char *)0;
+ 9: int main(int argc, char **argv)
+10: {
+11:   return 0;
+12: }
+/* end */
+
+--------------------
+
