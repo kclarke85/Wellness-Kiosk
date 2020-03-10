@@ -1,4 +1,4 @@
-# Creation Date: 3/05/20
+# Creation Date: 3/06/20
 # Author Kevin Clarke
 # Type: Smoke & Sanity
 # Priority: High
@@ -24,5 +24,5 @@
  # Scenario: Test Case 200 Delete user User Name: novak and validate user has been deleted
 
  Then TC_200 Delete the Novak entry and confirm
- But Confirm that the name novak was deleted
- Then Write validation Passed Failed to console or report
+ But TC_201 Confirm that the name novak was deleted
+ Then TC_202 Write validation Passed Failed to console or report

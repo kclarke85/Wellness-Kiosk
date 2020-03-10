@@ -1,4 +1,4 @@
-# Date: 3/5/20
+# Date: 3/6/20
 # Author: Kevin Clarke
 # Discription: For coding challenge
 # History: NA
@@ -78,16 +78,16 @@ Given(/^TC_200 Delete the Novak entry and confirm$/) do
 @browser.button(:class => 'btn ng-scope ng-binding btn-primary').click
 end
 
-And(/^Confirm that the name novak was deleted$/) do
+And(/^TC_201 Confirm that the name novak was deleted$/) do
  @browser.text_field(:type => 'text').set "novak"
 end
 
-Then(/^Write validation Passed Failed to console or report$/) do
+Then(/^TC_202 Write validation Passed Failed to console or report$/) do
 validation = @browser.td(:class => 'smart-table-data-cell').exist?
 
 if validation == false
   then puts "TC_100_200_Novak_Deleted_Passed"
-    else  puts "TC_100_200_Novak_Deleted_Passed"
+    else  puts "TC_100_200_Novak_Deleted_Failed"
         end
             sleep 10
               @browser.close
