@@ -14,13 +14,13 @@ And(/^intro$/) do # Play article 1 female voice
   Clipboard.copy Dash_intro
 #puts clipboard.past
   system 'C:\Ruby\TTS\balcon\balcon.bat'
-  sleep 2
+  sleep 20
   end
 
  Then(/^play male voice with second article$/) do # Play article two male voice
 Dash_intro2 = File.read('c:\Ruby\TTS\balcon\voice2.txt')
 Clipboard.copy Dash_intro2
 #puts clipboard.past
- system 'c:\Ruby\TTS\balcon\balcon.bat'
+ system 'c:\Ruby\balcon.bat'
    sleep 2
   end
