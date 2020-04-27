@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e6045cf-ba13-4985-b0cf-c4060ee19e22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/jira.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/doc/CHANGELOG.md.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/doc/changelog_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/tmp/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.11.3-x64-mingw32/lib/2.2/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.11.3-x64-mingw32/lib/2.3/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.11.3-x64-mingw32/lib/2.4/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.11.3-x64-mingw32/lib/2.5/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.11.3-x64-mingw32/lib/2.6/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.2/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.3/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.4/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.5/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.6/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/ffi-1.12.1-x64-mingw32/lib/2.7/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/json-2.3.0/ext/json/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/json-2.3.0/ext/json/ext/generator/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/json-2.3.0/ext/json/ext/generator/generator.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/json-2.3.0/ext/json/ext/parser/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/json-2.3.0/ext/json/ext/parser/parser.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/ext/zlib/zlib.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/zlib-1.1.0/lib/zlib.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.2/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.3/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.4/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.5/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.6/ffi_c.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ruby/gems/2.7.0/gems/ffi-1.12.2-x64-mingw32/lib/2.7/ffi_c.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Ruby.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ruby.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/101_slide_Demo.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/my_steps.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/step_definitions/soryboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/soryboard.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/Gemfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Kevin_Clarke_LL_challenge" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Ruby\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VyotHK38lTAgzEgWXl6Cg0LERR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Ruby\features\step_definitions" />
+      <recent name="C:\Ruby\features" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Ruby.run_dash">
+    <configuration name="dash" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Ruby" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/features" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/features/dash.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_dash" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Ruby" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/proj_functions" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/proj_functions/run_dash.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Ruby.run_dash" />
+        <item itemvalue="Ruby.dash" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e6045cf-ba13-4985-b0cf-c4060ee19e22" name="Default Changelist" comment="" />
+      <created>1578234909349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578234909349</updated>
+      <workItem from="1578234915766" duration="560000" />
+      <workItem from="1578360031173" duration="51000" />
+      <workItem from="1578360085953" duration="1256000" />
+      <workItem from="1578614527436" duration="1508000" />
+      <workItem from="1578660943957" duration="2502000" />
+      <workItem from="1578665201262" duration="1002000" />
+      <workItem from="1578693527624" duration="846000" />
+      <workItem from="1578694664557" duration="9821000" />
+      <workItem from="1578788725292" duration="1256000" />
+      <workItem from="1578794317174" duration="482000" />
+      <workItem from="1578922008653" duration="501000" />
+      <workItem from="1578924090077" duration="8712000" />
+      <workItem from="1579053698509" duration="163000" />
+      <workItem from="1579054064159" duration="923000" />
+      <workItem from="1579081131841" duration="639000" />
+      <workItem from="1579095023938" duration="1025000" />
+      <workItem from="1579097051183" duration="45000" />
+      <workItem from="1579098937859" duration="286000" />
+      <workItem from="1579101444025" duration="1453000" />
+      <workItem from="1579103244374" duration="1082000" />
+      <workItem from="1579181507562" duration="5644000" />
+      <workItem from="1579738687676" duration="3964000" />
+      <workItem from="1579824458025" duration="386000" />
+      <workItem from="1579827099823" duration="1609000" />
+      <workItem from="1580341429382" duration="2460000" />
+      <workItem from="1581194215953" duration="784000" />
+      <workItem from="1581272791051" duration="1747000" />
+      <workItem from="1581274762523" duration="1398000" />
+      <workItem from="1581276774522" duration="981000" />
+      <workItem from="1581286220442" duration="1723000" />
+      <workItem from="1581288131949" duration="644000" />
+      <workItem from="1583460428604" duration="799000" />
+      <workItem from="1583461526976" duration="1733000" />
+      <workItem from="1583464832127" duration="399000" />
+      <workItem from="1583467104564" duration="1322000" />
+      <workItem from="1583533383792" duration="231000" />
+      <workItem from="1583533631780" duration="683000" />
+      <workItem from="1583534388359" duration="202000" />
+      <workItem from="1583534612001" duration="106000" />
+      <workItem from="1583537330241" duration="380000" />
+      <workItem from="1583604178504" duration="815000" />
+      <workItem from="1583608368279" duration="262000" />
+      <workItem from="1583608837558" duration="1694000" />
+      <workItem from="1583611069139" duration="642000" />
+      <workItem from="1583612190742" duration="755000" />
+      <workItem from="1583613092692" duration="356000" />
+      <workItem from="1583615143456" duration="290000" />
+      <workItem from="1583618545686" duration="263000" />
+      <workItem from="1583619251902" duration="226000" />
+      <workItem from="1583623869051" duration="93000" />
+      <workItem from="1583625090863" duration="744000" />
+      <workItem from="1583630761311" duration="1425000" />
+      <workItem from="1583632580592" duration="1683000" />
+      <workItem from="1583635080481" duration="1904000" />
+      <workItem from="1583637052636" duration="1780000" />
+      <workItem from="1583638897848" duration="747000" />
+      <workItem from="1583703249305" duration="657000" />
+      <workItem from="1583704318684" duration="1800000" />
+      <workItem from="1583706450376" duration="860000" />
+      <workItem from="1583707501825" duration="1482000" />
+      <workItem from="1583709344048" duration="895000" />
+      <workItem from="1583710550074" duration="1793000" />
+      <workItem from="1583712438027" duration="1261000" />
+      <workItem from="1583714260887" duration="863000" />
+      <workItem from="1583882743714" duration="1119000" />
+      <workItem from="1584206239388" duration="1803000" />
+      <workItem from="1584227776088" duration="1301000" />
+      <workItem from="1584229994175" duration="885000" />
+      <workItem from="1584231376263" duration="1881000" />
+      <workItem from="1584386716812" duration="1217000" />
+      <workItem from="1584401737174" duration="194000" />
+      <workItem from="1584407486091" duration="1557000" />
+      <workItem from="1584409824776" duration="2118000" />
+      <workItem from="1584806216991" duration="1013000" />
+      <workItem from="1585066529842" duration="923000" />
+      <workItem from="1585067702332" duration="1432000" />
+      <workItem from="1585082151993" duration="527000" />
+      <workItem from="1585318714679" duration="1289000" />
+      <workItem from="1585321724118" duration="1851000" />
+      <workItem from="1585323980092" duration="641000" />
+      <workItem from="1585325187727" duration="446000" />
+      <workItem from="1585662417657" duration="45000" />
+      <workItem from="1585662588697" duration="1818000" />
+      <workItem from="1585664728776" duration="835000" />
+      <workItem from="1585665743336" duration="328000" />
+      <workItem from="1585666096825" duration="1199000" />
+      <workItem from="1585668867405" duration="1493000" />
+      <workItem from="1585671117194" duration="1071000" />
+      <workItem from="1586186277345" duration="753000" />
+      <workItem from="1586191683209" duration="153000" />
+      <workItem from="1586191991197" duration="1133000" />
+      <workItem from="1586193293095" duration="207000" />
+      <workItem from="1586193670670" duration="1474000" />
+      <workItem from="1586196395356" duration="824000" />
+      <workItem from="1586285713569" duration="613000" />
+      <workItem from="1586355349454" duration="686000" />
+      <workItem from="1586363429184" duration="1827000" />
+      <workItem from="1586365311419" duration="1736000" />
+      <workItem from="1586367209976" duration="1046000" />
+      <workItem from="1586370815514" duration="1948000" />
+      <workItem from="1586394478159" duration="423000" />
+      <workItem from="1586437316863" duration="1791000" />
+      <workItem from="1586439159609" duration="1757000" />
+      <workItem from="1586454225729" duration="764000" />
+      <workItem from="1586463612935" duration="753000" />
+      <workItem from="1586534423635" duration="1198000" />
+      <workItem from="1586539186607" duration="1996000" />
+      <workItem from="1586541799292" duration="701000" />
+      <workItem from="1586542932384" duration="469000" />
+      <workItem from="1586548009110" duration="703000" />
+      <workItem from="1586551676473" duration="1095000" />
+      <workItem from="1586634106364" duration="1434000" />
+      <workItem from="1586878491062" duration="606000" />
+      <workItem from="1586960639642" duration="1852000" />
+      <workItem from="1587044759766" duration="1798000" />
+      <workItem from="1587412600300" duration="3477000" />
+      <workItem from="1587500912398" duration="268000" />
+      <workItem from="1587662542729" duration="775000" />
+      <workItem from="1588021399835" duration="329000" />
+    </task>
+    <task id="LOCAL-00001" summary="Coding Challenge">
+      <created>1583707165724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583707165724</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Coding Challenge">
+      <created>1583883239107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583883239107</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Wellness Kiosk 4/16">
+      <created>1584386803016</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584386803016</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Wellness Kiosk 4/16">
+      <created>1584387114412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584387114412</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Wellness Kiosk 4/16">
+      <created>1584387153948</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584387153948</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Coding Challenge" />
+    <MESSAGE value="Wellness Kiosk 4/16" />
+    <MESSAGE value="Wellness Kiosk 4/16 pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wellness Kiosk 4/16 pm" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583533413469">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583533413469" />
+    <state x="424" y="168" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585662455176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585662455176" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1584392140143">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584392140143" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1583707284424">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583707284424" />
+    <state x="565" y="258" width="260" height="211" key="Github.ShareDialog" timestamp="1583707681074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="565" y="258" width="260" height="211" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1583707681074" />
+    <state width="1323" height="118" key="GridCell.Tab.0.bottom" timestamp="1586438184786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="118" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586438184786" />
+    <state width="1323" height="118" key="GridCell.Tab.0.center" timestamp="1586438184786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="118" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586438184786" />
+    <state width="1323" height="118" key="GridCell.Tab.0.left" timestamp="1586438184784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="118" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586438184784" />
+    <state width="1323" height="118" key="GridCell.Tab.0.right" timestamp="1586438184786">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="118" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586438184786" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1584387094376">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584387094376" />
+    <state x="584" y="99" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1583705915350">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="584" y="99" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1366.728@0.0.1366.728" timestamp="1583705915350" />
+    <state x="490" y="229" key="git4idea.rebase.GitRebaseDialog" timestamp="1588021713488">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="490" y="229" key="git4idea.rebase.GitRebaseDialog/0.0.1366.728@0.0.1366.728" timestamp="1588021713488" />
+    <state x="435" y="286" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1586363741305">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="286" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586363741305" />
+    <state x="339" y="166" key="run.anything.popup" timestamp="1583638129300">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="166" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583638129300" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583635317039">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583635317039" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Ruby@run_dash.rcov" NAME="run_dash Coverage Results" MODIFIED="1586437655888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/proj_functions" MODULE_NAME="Ruby" />
+    <SUITE FILE_PATH="coverage/Ruby@dash.rcov" NAME="dash Coverage Results" MODIFIED="1586285726919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features" MODULE_NAME="Ruby" />
+  </component>
+</project>
