@@ -1,0 +1,13 @@
+# Creation Date: 08/18/20
+# Author Kevin Clarke
+# Type: Demo Version
+# Priority: Medium
+# Estimate: Q1 Rollout
+
+Feature: Rules Engine Mitigation
+Scenario: 101 Rules Engine Scenario scenario
+
+Given Connect to Mongo CLuster
+#Given Login and go to event page
+#Given Sinatra Server
+#Given connect to Fan output datab

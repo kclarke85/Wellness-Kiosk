@@ -1,0 +1,21 @@
+# Creation Date: 07/01/20
+# Author Kevin Clarke
+# Type: Demo Version
+# Priority: Medium
+# Estimate: Q1 Rollout
+
+Feature: Run Mitigation
+ Scenario: 101 Execute Mitigation scenario
+
+Given Goto landing page
+#Given Login and go to event page
+#Given Sinatra Server
+#Given connect to Fan output database
+#Then  Run mitigation loop every (x) minutes
+#Then Turn Mitigation Engine Off
+#Given Connect to Camera Output Database
+#Then Determine the environment size and assign integet
+#Then  Determine x persons in range of x in the environment
+#And   Calaculate parts per million of mitigation dispense  measyred by number in group
+#Given run curl
+

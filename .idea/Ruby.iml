@@ -11,6 +11,24 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="sinatra (v2.0.8.1) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/lib" />
+          <root url="file://$MODULE_DIR$/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/examples" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/lib" />
+          <root url="file://$MODULE_DIR$/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/examples" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/lib/ruby/gems/2.7.0/gems/sinatra-2.0.8.1/examples" />
+        </excluded>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.2.2, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="atlassian-jwt (v0.2.0, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="backports (v3.17.0, ruby-2.6.5-p114) [gem]" level="application" />
@@ -80,7 +98,6 @@
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.2.0, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.142.7, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="shell (v0.8.0, ruby-2.6.5-p114) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sinatra (v2.0.8.1, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v0.1.0, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="strscan (v1.0.3, ruby-2.6.5-p114) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, ruby-2.6.5-p114) [gem]" level="application" />
