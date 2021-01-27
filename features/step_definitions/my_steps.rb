@@ -28,10 +28,10 @@ Given(/^Run mitigation for thirty minutes$/) do
   while true
 
   system "c:\\ruby\\sounds\\dec_sound.bat"
-  sleep 30
+  sleep 60
   system "c:\\ruby\\onbond.bat"
   system "TaskKill.exe /IM WMPlayer.exe"
-  sleep 1200
+  sleep 60
   system "c:\\ruby\\sounds\\clossing_sound.bat"
   sleep 30
   system "c:\\ruby\\offbond.bat"
